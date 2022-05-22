@@ -26,19 +26,21 @@ public class LineComparison {
         return length2;
     }
 
-    public static void equals(){
+    public static void compareTo(){
         int Line1 = length1();
         int Line2 = length2();
 
         if (length1() == length2()){
             System.out.println(" The Both lines are equal");
+        } else if (length1() < length2()) {
+            System.out.println(" Line1 length is Lesser than Line2 length ");
         }
-        else
-            System.out.println("The Both lines are not equal");
+        else 
+        System.out.println("Line1 length is Greater than Line2 length");
     }
 
     public static void main(String[] args) {
         System.out.println("Welcome to LineComparison Computation");
-        equals();
+        compareTo();
     }
 }
